@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>360 Spin</title>
+    <style>
+        .Content
+        {
+            max-width:980px;
+            margin:auto;
+        }
+        .Section
+        {
+            margin-top:16px !important;
+            margin-bottom:16px !important;
+        }
+        h1
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Họ tên: Võ Văn Bình Minh</h1>
+    <h1>MSSV: 1560340</h1>
+    <div class="Content Section" style="max-width:500px">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-1.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-2.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-3.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-4.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-5.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-6.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-7.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-8.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-9.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-10.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-11.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-12.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-13.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-14.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-15.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-16.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-17.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-18.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-19.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-20.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-21.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-22.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-23.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-24.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-25.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-26.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-27.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-28.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-29.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-30.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-31.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-32.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-33.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-34.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-35.jpg" style="width:100%">
+        <img class="MySlideshow" src="iphone7/iphone-7-plus-128gb-360-org-36.jpg" style="width:100%">
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("MySlideshow");
+            for (i = 0; i < x.length; i++) 
+            {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) 
+            {
+                myIndex = 1
+            }    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 80); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
